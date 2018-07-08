@@ -1,0 +1,7 @@
+# Allow access to the Application Gateway only
+# X-Client-IP has the end connection IP
+# Client-IP has the Application Gateway IP
+Order Deny,Allow
+Deny from all
+SetENVIf Client-IP "23.97.223.82" AllowAccess
+Allow from env=AllowAccess
