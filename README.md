@@ -22,3 +22,8 @@ This will assume using Let's Encrypt to generate a wildcard certificate for your
 - Add the final custom domain to the CDN endpoint's Custom Domains.
   For example: If the entire site traffic is to be passed through the CDN domain `myapp.mydomain.com`, verify that domain by adding a `CNAME` record from `myapp` on `mydomain.com` to `myapp.azureedge.net` then add it through the Portal UI.
 - Configure SSL on the custom domain. The process usually take about 6 hours to get done.
+
+## Block access to the Web App from outside the Application Gateway
+
+- Edit `.htaccess` and add the Application Gateway's public IP
+- Upload `.htaccess` and `index.php` to your Web App to test
