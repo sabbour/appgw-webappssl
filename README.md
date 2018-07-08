@@ -12,7 +12,8 @@ This will assume using Let's Encrypt to generate a wildcard certificate for your
 
 ## Create and configure the Application Gateway and Virtual Network
 
-- Execute the `provision-appgw.sh` script
+- Edit the variables in `init-vars.sh` to match your needs
+- Execute the `run.sh` script
 
 ## CDN
 
